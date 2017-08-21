@@ -1,0 +1,170 @@
+﻿.center{
+    text-align: center;
+}
+.none{
+    display:none;
+}
+.underline{
+    text-decoration: underline;
+}
+.dotted{
+    border-bottom: 1px dotted;
+}
+.italic{
+    font-style: italic;
+}
+.pointer{
+    cursor: pointer;
+}
+.gradient-blue{
+    background: linear-gradient(to top, #000a56, #006fb3);
+}
+
+.width{
+    width: 100%;
+    justify-content: space-around;
+}
+.width100{
+    width:100%
+}
+.inline-block
+{
+    display: inline-block;
+}
+.cell {
+    display: flex;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flexbox{
+    display: flex;
+}
+.flexVertical{
+    flex-direction: column;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flexbox-full-center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-wrap_re{
+    flex-wrap: wrap-reverse;
+}
+.flex   {display: inline-flex;}
+.flex-right{
+    align-self: flex-end;
+}
+.flex-mid{
+    align-items: center;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.flex-around{
+    justify-content: space-around;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flexToEnd{
+    margin-left: auto;
+}
+.noflex{
+    display:block;
+}
+.black{
+    color: #373E36
+}
+.red{
+    color: #AD241A
+}
+.blue{
+    color: #3583A7;
+    display: block;
+}
+.strikeout{
+    text-decoration: line-through;
+}
+.right-abs{
+    right: 170px;
+    bottom: 50px;
+}
+.relative{
+    position: relative;
+}
+.left-abs{
+    left: 170px;
+    bottom: 50px;
+}
+
+.okay .value,
+.green{color: #26c700;}
+.lost .value,
+.red{color: #f33;}
+.extra .value,
+.orange{color: #fb8b00;}
+.grey{color: #aaa}
+.ygreen{color: #1ea01d}
+
+.bgbrown{
+    background: #a52a2a;
+    color:#fff;
+}
+.flex2{
+    flex: 2 100%;
+}
+.flex025{
+    flex: 0.25
+}
+.static{
+    position: static;
+}
+.action{
+    border-bottom: 1px #333 dotted;
+}
+
+.nobg{
+    background: transparent;
+    background-color: transparent;
+    /*background-image: none;*/
+}
+.padding20{
+    padding: 20px;
+}
+.padding30{
+    padding: 30px;
+}
+.abs-left-bot{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.bottom5{
+    margin-bottom: 5px;
+}
+.bottom7{
+    margin-bottom: 7px;
+}
+.bottom10{
+    margin-bottom: 10px;
+}
+
+
+
+.none{
+    display:none;
+}
