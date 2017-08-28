@@ -37,81 +37,7 @@ let Navigation = new MonsieurContent({
     }
 });
 
-let MenuTree = new MonsieurContent({
-    Target: '.main-menu',
-    Content: `<div class="menu-common menu-box"></div>`,
-    Controller: {
-        Type: TreeBuilder,
-        Data: [
-            {
-                Name: 'Quick review',
-                Id: 'menu-quick',
-                Common: [
-                    {
-                        Name: `Hello World`,
-                        Id: `cmn-hello`
-                    },
-                    {
-                        Name: `More Samples`,
-                        Id: `cmn-samples`
-                    },
-                    {
-                        Name: `This menu sample`,
-                        Id: `cmn-menu`
-                    }
-                ]
-            },
-            {
-                Name: 'Content Constructor',
-                CConstr: [
-                    {
-                        Name: 'General',
-                        Id: 'cc-gen'
-                    },
-                    {
-                        Name: 'Control',
-                        Id: 'cc-control'
-                    },
-                    {
-                        Name: 'SubContent',
-                        Id: 'cc-subcontent'
-                    }
-                ]
-            },
-            {
-                Name: 'Controller',
-                Id: 'menu-controller',
-                Controllers: [
-                    {
-                        Name: 'Templator',
-                        Id: 'mt-main',
-                        CTemplator: [
-                            {
-                                Name: 'Simple Refresh',
-                                Id: 'mt-simplerefresh'
-                            },
 
-                        ]
-                    },
-                    {
-                        Name: 'TreeBuilder',
-                        Id: 'mtb-main',
-                        CTreeBuilder: [
-                            {
-                                Name: 'General',
-                                Id: 'mtb-general'
-                            },
-
-                        ]
-                    }
-                ]
-            }
-        ],
-        ListElement: `<div class="menu-common__item menu__element" data-type="{{$key}}">
-                        <div class="element head" data-type="{{$key}}" id="{{Id}}">{{Name}}</div>
-                      </div>`
-    }
-});
 // ###### COMMON
 let HelloWorld = new MonsieurContent({
     Target: '.main-content',
@@ -119,17 +45,42 @@ let HelloWorld = new MonsieurContent({
     Visible: true,
     Content: `<div class="content hello-world">
                 <h2>Hello World</h2>
-                <p>Все любят показывать свои бесполезные хелловорлды, я тоже покажу:</p>
-                <pre><code class="code-js language-js"></code></pre>
-                <div class="pre-preview"><div class="preview"><div class="sample hello">Hello World!</div></div></div>
+                <p>Everybody likes to show own useless helloworlds, so, I'll show too.</p>
+                <div class="s1"></div>
+                <br>
+                <p>Okay, this is too easy and too useless. Let is try again</p>
+                <div class="s2"></div>
+                <br>
+                <p>This content uses a Controller (Templator by default), who changes name by button click. Changeable elements wrap to &lt;span/&gt;</p>
             </div>`,
     Control: [{Target: '#cmn-hello'}],
     AfterBuild: function () {
-        this.Select('code').innerText = `let hello = new MonsieurContent({
+        this.Select('.s1').appendChild( BuildSample(`let hello = new MonsieurContent({
         Target: 'body',
-        Content: \'<div class="sample hello">Hello World!</div>\`
-    })`;
-        hljs.highlightBlock(this.Select('code'));
+        Content: \`<div class="sample hello">
+                    <h2>Hello World!</h2>
+                  </div>\`
+    })`));
+        this.Select('.s2').appendChild( BuildSample(`let hello = new MonsieurContent({
+    Target: 'body',
+    Content: \`<div class="sample hello">
+                <h2>Hello {{name}}!</h2>
+                <button>Hi, but I a, Alex.</button>
+               </div>\`,
+    Controller: {
+        Data: {
+            name: 'World' // Default data
+        }
+    },
+    AfterBuild: function(){
+        let self = this;
+        this.Select('button').onclick = function(){
+            this.remove();
+            self.Data.name = 'Alex';
+            self.Refresh();
+            }
+    }   
+});`) );
     }
 
 });
@@ -138,35 +89,19 @@ let MoreSamples = new MonsieurContent({
     Target: '.main-content',
     Type: 'content',
     Content: `<div class="content hello-world">
-
+                <h2>Button click</h2>
+                <p>If the content have to been refreshed, need set a controller. Onclick change what needs, and refresh the Controller. There are changeable fields will be rerendered only.</p>
+                <div class="s1"></div>
+                <br>
+                <h2>Counter</h2>
+                <p>Add row onclick, on increase/decrease value refresh sum.</p>
+                <div class="s2"></div>
+                
 </div>`,
     Control:  [{Target: '#cmn-samples'}],
-    SubContent: {
-        SampleButtonContent: {
-            Content: `<div class="sample">
-    <h2>Button click</h2>
-    <p>Если контент должен обновляться по изменению объекта, необходим контроллер. При клике обновляем контроллер, перерендерятся только изменяемые поля, но не весь объект</p>
-    <pre><code class="code-js language-js"></code></pre>
-    <div class="pre-preview"><div class="preview"></div></div>
-</div>`,
-            //Type: 'sample',
-            SubContent: {
-                bt: {
-                    Target: '.preview',
-                    Content: `<button class="button">'{{Name}}' was clicked {{count}} times</button>`,
-                    Controller: {
-                        Data: {Name: "TheButton", count: 0}
-                    },
-                    OnClick: function () {
-                        this.Data.count++;
-                        this.Refresh();
-
-                    }
-                }
-            },
-            AfterBuild: function () {
-                this.Select('code').innerText = `let bt = new MonseurContent({
-    Target: '.preview',
+    AfterBuild: function () {
+        this.Select('.s1').appendChild( BuildSample(`new MonsieurContent({
+    Target: 'body',
     Content: \`<button class="button">'{{Name}}' was clicked {{count}} times</button>\`,
     Controller: {
         Data: {Name: "TheButton", count: 0}
@@ -174,113 +109,54 @@ let MoreSamples = new MonsieurContent({
     OnClick: function () {
         this.Data.count++;
         this.Refresh();
+        }
+        
+    });`));
 
-    });`;
-                hljs.highlightBlock(this.Select('code'));
-            }
-
-
-        },
-        SampleCounter: {
-            Content: `<div class="sample">
-    <h2>Counter</h2>
-    <p>При клике кнопки добавляем строку , при увеличении/уменьшении сзначения обновляем сумму</p>
-    <pre><code class="code-js language-js"></code></pre>
-    <div class="pre-preview"><div class="preview"></div></div>
-</div>`,
-            //Type: 'sample',
-            SubContent: {
-                ct: {
-                    Target: '.preview',
-                    Content: `<div class="counter content-box">
+        this.Select('.s2').appendChild( BuildSample(`new MonsieurContent({
+    Target: 'body',
+    Content: \`<div class="counter content-box">
                 <div>Sum is : <span class="count-sum">0</span></div>
                 <button class="button">Add Line</button>
                 <div class="counter-lines"></div>
-              </div>`,
-                    Title: '.count-sum',
-                    Controller: {
-                        Target: '.counter-lines',
-                        ListElement: `<div class="counter-line row element">
-                                <div class="c-item dec element">-</div>
-                                <div class="c-item-val element">{{val}}</div>
-                                <div class="c-item inc element">+</div>
-                              </div>`,
-                    },
-                    Methods: function () {
-                        let $this = this;
-                        this.CalcSum = function () {
-                            let sum = 0;
-                            $this.Data.forEach(function (item) {
-                                sum += item.val;
-                            });
-                            $this.Title = sum;
-                        }
-                    },
-                    AfterBuild: function () {
-                        let $this = this;
-                        this.Select('.button').onclick = function () {
-                            $this.Add({val: 0});
-                        };
-                        this.AddEventListener('click', '.c-item', function () {
-                            let i = this.parentElement.dataset['line'];
-                            if (this.classList.contains('inc'))
-                                $this.Data[i].val++;
-                            else
-                                $this.Data[i].val--;
-                            $this.RefreshOne(i);
-                            $this.CalcSum();
-                        });
-                    }
-                }
-            },
-            AfterBuild: function () {
-                this.Select('code').innerText = `let bt = new MonseurContent({
-                    Target: '.preview',
-                    Content: \`<div class="counter content-box">
-                    <div>Sum is : <span class="count-sum">0</span></div>
-                    <button class="button">Add Line</button>
-                <div class="counter-lines"></div>
-                    </div>\`,
-                    Title: '.count-sum',
-                    Controller: {
-                        Target: '.counter-lines',
-                        ListElement: \`<div class="counter-line row element">
-                    <div class="c-item dec element">-</div>
-                    <div class="c-item-val element">{{val}}</div>
-                <div class="c-item inc element">+</div>
-                    </div>\`,
-                    },
-                    Methods: function () {
-                        let $this = this;
-                        this.CalcSum = function () {
-                            let sum = 0;
-                            $this.Data.forEach(function (item) {
-                                sum += item.val;
-                            });
-                            $this.Title = sum;
-                        }
-                    },
-                    AfterBuild: function () {
-                        let $this = this;
-                        this.Select('.button').onclick = function () {
-                            $this.Add({val: 0});
-                        };
-                        this.AddEventListener('click', '.c-item', function () {
-                            let i = this.parentElement.dataset['line'];
-                            if (this.classList.contains('inc'))
-                                $this.Data[i].val++;
-                            else
-                                $this.Data[i].val--;
-                            $this.RefreshOne(i);
-                            $this.CalcSum();
-                        });
-                    }
-                });`;
-                hljs.highlightBlock(this.Select('code'));
-            }
-
-
+              </div>\`,
+    Title: '.count-sum',
+    Controller: {
+        Target: '.counter-lines',
+        ListElement: \`<div class="counter-line row element" style="display: flex">
+                        <div class="c-item dec element">-</div>
+                        <div class="c-item-val element">{{val}}</div>
+                        <div class="c-item inc element">+</div>
+                      </div>\`,
+    },
+    Methods: function () {
+        let $this = this;
+        this.CalcSum = function () {
+            let sum = 0;
+            $this.Data.forEach(function (item) {
+                sum += item.val;
+            });
+            $this.Title = sum;
         }
+    },
+    AfterBuild: function () {
+        let $this = this;
+        this.Select('.button').onclick = function () {
+            $this.Add({val: 0});
+        };
+        this.AddEventListener('click', '.c-item', function (e) {
+            let it = e.currentTarget;
+            let i = it.parentElement.dataset['line'];
+            if (it.classList.contains('inc'))
+                $this.Data[i].val++;
+            else
+                $this.Data[i].val--;
+            $this.RefreshOne(i);
+            $this.CalcSum();
+        });
+    }
+});`,'','.element{padding: 10px}'));
+
     }
 });
 

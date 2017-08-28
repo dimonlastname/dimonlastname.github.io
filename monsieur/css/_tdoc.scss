@@ -1,0 +1,127 @@
+﻿/*SYNTAX*/
+.S{color: #00c100}/* Строки красные */
+.func{font-style: italic}/* Юзер-функции синие */
+.C{color:orange}/* Комменты оранжевые */
+.kwrd{color:blue}/* Ключевые слова полужирные */
+.R{color:gray} /*Серые регвыражения */
+
+.hljs-name{color:blue; font-weight: normal}
+.hljs-string{color: #00c100}
+.code-html .hljs-attr{color:red; }
+.code-js .hljs-attr{color:burlywood; }
+.hljs-number{color:blue}
+.hljs-keyword{color:#1043da; font-weight: normal; font-style: italic}
+
+/*TDOC.CSS*/
+.code{
+    display: block;
+}
+
+.pre{
+  /*  min-width: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;*/
+    overflow: auto;
+}
+.bottom10{
+    padding-bottom: 10px;
+}
+.bottom20{
+    padding-bottom: 20px;
+}
+.bottom40{
+    padding-bottom: 40px;
+}
+.select{
+    padding: 0;
+    flex: inherit;
+}
+.menu{
+   /* background-color: #56ade2;*/
+    width: 350px
+}
+.menu-content{
+    min-width: 0;
+}
+.menu_element{
+   /* background-color: #61c8de;*/
+    padding-left: 1em;
+    line-height: 1.35rem;
+
+}
+
+.menu_element-name,
+.menu-content_element-name{
+    color: #68aae8 ;
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+.menu_element-name:hover,
+.menu_element-name.active{
+    background-color: #eee;
+}
+
+.menu-content_element-name{
+    text-transform: uppercase;
+}
+.menu-content_element-name[data-type="Objects"]{font-size: 2rem}
+.menu-content_element-name[data-type="root"]{font-size: 2.75rem}
+.menu-content_element-description{
+    padding: 10px;
+ /*   font-style: italic;*/
+    background-color: aliceblue;
+    line-height: 1.5rem;
+}
+.menu-content_element{
+    padding: 10px;
+    padding-left: 1.5em;
+}
+.menu-content_element[data-type="methods"]{
+    margin-top: 15px;
+
+}
+.menu-content_element-name[data-type="root"]{display: none}
+.menu-content_element[data-type="root"]{padding: 0}
+.menu-content_element[data-type="objects"]{
+    border-bottom: 2px  #00b1ff solid;
+    margin-bottom: 2em;
+}
+.menu-content_element-name[data-type="objects"]{
+    color: black;
+    font-size: 1.75em;
+}
+.menu-content_element[data-type="objects"]:last-child{border-bottom: none}
+.menu-content_element-name[data-type="methods"]{
+    border-bottom: 2px #ff0404 solid;
+    display: inline-block;
+    padding: 0 10px;
+}
+.menu-content_element[data-type="methods"] .method-div {
+    margin-top: 10px;
+}
+.menu-content{
+    padding: 20px;
+    border: 2px #00b1ff solid;
+    flex: 1;
+    margin-right: 10%;
+    margin-bottom: 100px;
+
+}
+
+.code-js{
+    padding: 10px;
+    background-color: #eee;
+}
+.code-html{
+    padding: 10px;
+    background-color: #eee;
+}
+.code-result{
+    padding: 10px;
+    background-color: #fff0f0;
+}
+.code-caption{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
