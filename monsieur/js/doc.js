@@ -155,7 +155,12 @@ let MoreSamples = new MonsieurContent({
             $this.CalcSum();
         });
     }
-});`,'','.element{padding: 10px}'));
+});`,'',`.element{
+    padding: 10px;
+}
+.dec, .inc{
+    cursor:pointer;
+}`));
 
     }
 });
