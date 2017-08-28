@@ -120,12 +120,15 @@ let Monsieur = (function(){
 
                     let s = c.replace(/\s/g, "");
                     let containsSpecialObject = (s.indexOf('$item')> -1 || s.indexOf('$this') > -1 || s.indexOf('$parent') > -1 ) ;
-                    let containsSpecialObjectTreeBuiler = (s.indexOf('$index')> -1 || s.indexOf('$j')> -1 || s.indexOf('$key') > -1 || s.indexOf('$lvl') > -1 ) ;
+                    let containsSpecialObjectTreeBuiler = (s.indexOf('$index')> -1 || s.indexOf('$j')> -1 || s.indexOf('$key') > -1 || s.indexOf('$lvl') > -1 || s.indexOf('$g.') > -1 ) ;
                     let isSpecialSymbol = (s === "?" || s.indexOf("=") > -1 || s.indexOf(">") > -1|| s.indexOf("<") > -1);
                     let isString = s.match(/^["'\\][\s\S]*["'\\]$/) !== null;
                     let isIterator = s === "i" || s === "j";
                     let isNumber = !isNaN(s);
                     if (containsSpecialObject || containsSpecialObjectTreeBuiler || isIterator || isNumber || isString ||isSpecialSymbol){
+                        if (s.indexOf('$g.') > -1){ //if global object
+                            return s.replace('$g.', '');
+                        }
                         return c;
                     }
                     return "o."+s;
@@ -351,6 +354,8 @@ return \``;
              * @constructor
              */
             this.SelectAll = function(Selector, parent = document){
+                if (typeof Selector === 'undefined')
+                    return [];
                 if (typeof Selector.tagName !== 'undefined' || Selector === document)
                     return [Selector];
                 return parent.querySelectorAll(Selector);
@@ -470,6 +475,27 @@ return \``;
                 });
 
 
+            };
+            this.GetInlineSize = function(elem, fontSize='1rem'){
+                const hiddenStyle = "left:-10000px;top:-10000px;height:auto;width:auto;position:absolute;";
+                const clone = document.createElement('div');
+                for (let k in elem.style) {
+                    try {
+                        if ((elem.style[k] !== '') && (elem.style[k].indexOf(":") > 0)) {
+                            clone.style[k] = elem.style[k];
+                        }
+                    } catch (e) {}
+                }
+                document.all ? clone.style.setAttribute('cssText', hiddenStyle) : clone.setAttribute('style', hiddenStyle);
+                clone.style.fontSize = fontSize;
+                clone.innerHTML = elem.innerHTML;
+                parent.document.body.appendChild(clone);
+                const sizes = {width:clone.clientWidth,height:clone.clientHeight};
+                parent.document.body.removeChild(clone);
+                return sizes;
+            };
+            this.isNumeric = function(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
             };
             //this.Content = MonsieurContent;
             //this.Templator = Templator;
@@ -604,6 +630,7 @@ return \``;
             };
             this.Culture = {
                 MonthNames: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+                MonthNamesShort: ["янв.", "фев.", "мар.", "апр.", "май", "июн.", "июл.", "авг.", "сен.", "окт.", "ноя.", "дек."],
                 WeekDays: ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"],
                 WeekDaysShort: ["пн", "вт", "ср", "чт", "пт", "сб", "вс"],
             };
@@ -615,7 +642,9 @@ return \``;
         };
 
         PerformanceNow(perfStart, text='Perf'){
-            console.info("[" + text + "]: " +Math.floor((window.performance.now()-perfStart)*100)/100 + "ms");
+            const x = Math.floor((window.performance.now()-perfStart)*100)/100;
+            console.info("[" + text + "]: " + x + "ms");
+            return x;
         }
 
         /**
@@ -823,7 +852,7 @@ class MonsieurContent {
         let $this = this;
         this.isContent = true;
         this.isActive = true;
-        if (Name  === 'ReportLong')
+        if (Name  === 'Tooltipchek')
             ;//debugger;
 
         this.Parent = Parent;
@@ -835,10 +864,11 @@ class MonsieurContent {
         else if (Target !== null){
             this.Target = Monsieur.Select(Target);
         }
-
+       // debugger;
         ////
         if (Content === null){
             this.Content = this.Target;
+            construct.call($this);
         }else{
             if (Content.match(/<[^>]+>/) === null) {//if not dom string
                 console.log('get load');
@@ -862,11 +892,20 @@ class MonsieurContent {
             }
             else if (Controller !== null && !Array.isArray(Controller.Data))
             {
-                Content = Content.replace(/<[^>]+>([^<]*{{([^#}]+)}}[^<]*)<[^>]+>/g, function (match, group) {
+                /*Content = Content.replace(/<[^>]+>([^<]*{{([^#}]+)}}[^<]*)<[^>]+>/g, function (match, group) {
                     let newGroup = group.replace(/{{[^#}]+}}/g, function (match) {
                         return match.replace(match, `<span>${match}</span>`);
                     });
                     return  match.replace(group, newGroup);
+                });*/
+                Content = Content.replace(/>[^>]*({{[^#}]+}})[^>]*</g, function (match, group) {
+                    /*let newGroup = group.replace(/{{[^#}]+}}/g, function (match) {
+                        return match.replace(match, `<span>${match}</span>`);
+                    });*/
+                    const x = match.replace(/{{[^#}]+}}/g, function (matche) {
+                        return `<span>${matche}</span>`
+                    });
+                    return x;// match.replace(group, `<span>${group}</span>`);
                 });
                 this.Content = Monsieur.CreateElementFromString(Content);
             }
@@ -1768,7 +1807,9 @@ class Templator{
             if ($this.LineAdd !== null)
             {
                 $this.LineAdd(item, function () { //remove extraclass callback
-                    $this.Content.querySelector('.'+extraclass).classList.remove(extraclass);
+                    let x = $this.Content.querySelector('.'+extraclass);
+                    if (x)
+                        x.classList.remove(extraclass);
                 });
             }
             $this.AfterAdd(item, i);
@@ -2249,54 +2290,41 @@ class MonsieurTooltip{
                     Time      = 1100,               //showing time
                     Cursor    = "help",             //item:hover cursor
                     Custom    = `<div class="monsieur-tooltip">`,               //custom html of tooltip
+                    AfterBuild = function(){}
 
                 })
     {
         let $this = this;
-        let ToolTip = Monsieur.CreateElementFromString(Custom);
+        this.ToolTip = Monsieur.CreateElementFromString(Custom);
         let Timer = null;
         let Destr = null;
         this.Target = Monsieur.Select(Target);
-        function Show(text){
-            ToolTip.innerHTML = text;
-            $this.Target.appendChild(ToolTip);
+        const Show = function (text){
+            this.ToolTip.innerHTML = text;
+            $this.Target.appendChild(this.ToolTip);
 
-        }
-        $this.Target.querySelectorAll(`[${Attribute}]`).forEach(function (item) {
-            item.addEventListener('mouseover', function (e) {
-                let text = e.currentTarget.dataset[Attribute.replace('data-', '')];
-                clearTimeout(Destr);
-                Timer = setTimeout(function(){
-                    Show(text);
-                }, Delay);
-            });
-            item.addEventListener('mouseout', function () {
-                clearTimeout(Timer);
-                Destr = setTimeout(function () {
-                    ToolTip.remove();
-                }, Time)
-            })
-        });
-
-
-      /*  $(Target).find(`[${Attribute}]`).mouseover(function (e) {
-            let text = $(e.currentTarget).attr(Attribute);
+        }.bind(this);
+        Monsieur.AddEventListenerGlobal('mouseover', `[${Attribute}]`, function (e) {
+            let text = e.currentTarget.dataset[Attribute.replace('data-', '')];
             clearTimeout(Destr);
             Timer = setTimeout(function(){
                 Show(text);
             }, Delay);
-        });
-        $(Target).find(`[${Attribute}]`).mouseout(function (e) {
+        }, this.Target);
+        Monsieur.AddEventListenerGlobal('mouseout', `[${Attribute}]`, function (e) {
             clearTimeout(Timer);
             Destr = setTimeout(function () {
-                Custom.remove();
+                //$this.ToolTip.remove();
             }, Time)
-        })*/
+        }, this.Target);
+        setTimeout(function () {
+            AfterBuild.bind($this);
+        }, 0)
     }
 
 }
 
-
+Monsieur.Content = MonsieurContent;
 
 
 
