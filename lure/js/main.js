@@ -45,7 +45,7 @@ function BuildSample(js='',html='',css='') {
     res += '<!doctype html>';
     res += '<html>';
     res += '<head>';
-    res += '<link rel="stylesheet" type="text/css" href="https://dimonlastname.github.io/lure/lure.css" />\r\n';
+    res += '<link rel="stylesheet" type="text/css" href="https://dimonlastname.github.io/lure/lure/lure.css" />\r\n';
     res += `<style>${css}</style>`;
     res += '<script src="https://dimonlastname.github.io/monsieur/lure/lure.all.min.js"></script>\r\n';
     res += '</head><body>';

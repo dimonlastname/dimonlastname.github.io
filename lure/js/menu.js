@@ -3,7 +3,7 @@
     Target: '.main-menu',
     Content: `<div class="menu-common menu-box"></div>`,
     Controller: {
-        Type: TreeBuilder,
+        Type: "TreeBuilder",
         Data: [
             {
                 Name: 'Quick start',
