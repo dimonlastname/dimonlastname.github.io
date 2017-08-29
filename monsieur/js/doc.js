@@ -64,19 +64,19 @@ let HelloWorld = new MonsieurContent({
         this.Select('.s2').appendChild( BuildSample(`let hello = new MonsieurContent({
     Target: 'body',
     Content: \`<div class="sample hello">
-                <h2>Hello {{name}}!</h2>
-                <button>Hi, but I a, Alex.</button>
+                <h2>Hello, {{Name}}!</h2>
+                <button class="button">Hi, but I'm, Cat.</button>
                </div>\`,
     Controller: {
         Data: {
-            name: 'World' // Default data
+            Name: 'World' // Default data
         }
     },
     AfterBuild: function(){
         let self = this;
         this.Select('button').onclick = function(){
             this.remove();
-            self.Data.name = 'Alex';
+            self.Data.Name = 'Cat';
             self.Refresh();
             }
     }   
@@ -130,35 +130,33 @@ let MoreSamples = new MonsieurContent({
                       </div>\`,
     },
     Methods: function () {
-        let $this = this;
         this.CalcSum = function () {
             let sum = 0;
-            $this.Data.forEach(function (item) {
+            this.Data.forEach(function (item) {
                 sum += item.val;
             });
-            $this.Title = sum;
-        }
+            this.Title = sum;
+        }.bind(this);
     },
     AfterBuild: function () {
-        let $this = this;
         this.Select('.button').onclick = function () {
-            $this.Add({val: 0});
-        };
+            this.Add({val: 0});
+        }.bind(this);
         this.AddEventListener('click', '.c-item', function (e) {
             let it = e.currentTarget;
             let i = it.parentElement.dataset['line'];
             if (it.classList.contains('inc'))
-                $this.Data[i].val++;
+                this.Data[i].val++;
             else
-                $this.Data[i].val--;
-            $this.RefreshOne(i);
-            $this.CalcSum();
-        });
+                this.Data[i].val--;
+            this.RefreshOne(i);
+            this.CalcSum();
+        }.bind(this));
     }
 });`,'',`.element{
     padding: 10px;
 }
-.dec, .inc{
+.c-item{
     cursor:pointer;
 }`));
 
@@ -171,19 +169,21 @@ let MenuSample = new MonsieurContent({
     Type: 'content',
     Content: `<div class="content">
     <h2>This menu</h2>
-    <p>Так построено собственнное меню слева</p>
-    <pre><code class="code-js language-js"></code></pre>
+    <p>This page left menu building:</p>
+    <div class="s1"></div>
 </div>`,
     Control: [{Target: '#cmn-menu'}],
     AfterBuild: function () {
-        this.Select('code').innerText = `let MenuTree = new MonsieurContent({
-    Target: '.main-menu',
-    Content: \`<div class="menu-common menu-box"></div>\`,
+        this.Select('.s1').appendChild( BuildSample(`let MenuTree = new MonsieurContent({
+
+    Target: 'body',
+    Content: \`<div class="main-menu"> <div class="menu-common menu-box"></div></div>\`,
     Controller: {
         Type: TreeBuilder,
         Data: [
             {
-                Name: 'Common',
+                Name: 'Quick start',
+                Id: 'menu-quick',
                 Common: [
                     {
                         Name: 'Hello World',
@@ -200,25 +200,55 @@ let MenuSample = new MonsieurContent({
                 ]
             },
             {
-                Name: 'Cat 2',
-                Common: [
+                Name: 'Content Constructor',
+                CConstr: [
                     {
-                        Name: 'Hello World',
-                        Id: 'cat1'
+                        Name: 'General',
+                        Id: 'cc-gen'
                     },
                     {
-                        Name: 'More Samples',
-                        Id: 'cat2'
+                        Name: 'Control',
+                        Id: 'cc-control'
+                    },
+                    {
+                        Name: 'SubContent',
+                        Id: 'cc-subcontent'
                     }
                 ]
             }
         ],
-        ListElement: \`<div class="menu-common__item menu__element" data-type="{{$key}}">
+        ListElement:\`<div class="menu-common__item menu__element" data-type="{{$key}}">
             <div class="element head" data-type="{{$key}}" id="{{Id}}">{{Name}}</div>
         </div>\`
     }
-});`;
-        hljs.highlightBlock(this.Select('code'));
+});`, '', `
+.main-menu {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.main-menu .menu-box {
+  background-color: #f2f2f2;
+  padding: 15px;
+  padding-left: 7px;
+}
+.main-menu .menu__element {
+  font-weight: normal;
+  padding: 0;
+  padding-left: 1.2em;
+}
+.main-menu .menu__element[data-type="root"] {
+  padding: 5px 0;
+  font-weight: bold;
+}
+.main-menu .menu__element[data-type="root"]:first-child {
+  padding-top: 0;
+}
+.main-menu .menu__element .head:not([data-type="root"]):hover,
+.main-menu .menu__element .head:not([data-type="root"]).active {
+  background: #00b1ff;
+  color: #fff;
+  cursor: pointer;
+}`));
     }
 });
 // ###### CONTENT CONSTRUCTOR

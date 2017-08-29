@@ -46,18 +46,7 @@ coder.onkeyup = function () {
     f.srcdoc = thtml.value + `<script>${tjs.value}</script><style>`;
 };*/
 
-const sa = {
-    html: `<script src="https://dimonlastname.github.io/monsieur/ext/monsieur/monsieur.js"></script>`,
-    js: `let hello = new MonsieurContent({
-        Target: 'body',
-        Content: \`<div class="sample hello">Hello World!</div>\`
-    })`
-};
-/*
-* <pre class="js"><code class="code-js language-js"     contenteditable="true">${js}</code></pre>
- <pre class="html"><code class="code-html language-html" contenteditable="true">${html}</code></pre>
- <pre class="css"><code class="code-css language-css"   contenteditable="true">${css}</code></pre>
- */
+
 function BuildSample(js='',html='',css='') {
 
     let str = `<div class="coder row">`;
@@ -90,13 +79,21 @@ function BuildSample(js='',html='',css='') {
         elementCss.innerHTMLs = css;
         hljs.highlightBlock(Monsieur.Select('.code-css',x));
     }
-    let res = '<script src="https://dimonlastname.github.io/monsieur/ext/monsieur/monsieur.js"></script>\r\n';
-    res += '<link rel="stylesheet" type="text/css" href="https://dimonlastname.github.io/monsieur/ext/monsieur/monsieur.css" />';
+    let res = '';
+    res += '<!doctype html>';
+    res += '<html>';
+    res += '<head>';
+    res += '<link rel="stylesheet" type="text/css" href="https://dimonlastname.github.io/monsieur/ext/monsieur/monsieur.css" />\r\n';
+    res += '<link rel="stylesheet" type="text/css" href="https://dimonlastname.github.io/monsieur/ext/css/common.css" />\r\n';
+    res += `<style>${css}</style>`;
+    res += '<script src="https://dimonlastname.github.io/monsieur/ext/monsieur/monsieur.js"></script>\r\n';
+    res += '</head><body>';
     res += '<div></div>';// if remove row, <body> tag would be undefined
     res += html;
     res += `<script>${js}</script>`;
-    res += `<style>${css}</style>`;
+    res += '</body></html>';
     Monsieur.Select('.iframe', x).srcdoc = res;
+
     return x;
 }
 

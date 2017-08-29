@@ -80,7 +80,16 @@ input, select {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.button{
+    padding: 5px 10px;
+    background-color: aliceblue;
+}
+.button:active{
+    position: relative;
+    left: 1px;
+    top:1px
 
+}
 
 .rel{
     position: relative;
