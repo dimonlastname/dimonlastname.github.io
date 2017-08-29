@@ -82,7 +82,7 @@ input, select {
 }
 .button{
     padding: 5px 10px;
-    background-color: aliceblue;
+    background-color: #ddd;
 }
 .button:active{
     position: relative;
