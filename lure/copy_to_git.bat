@@ -1,0 +1,1 @@
+xcopy  %cd% c:\#proj\!github\dimonlastname.github.io\lure /e/i/y

@@ -1,0 +1,1 @@
+xcopy  c:\#proj\!github\Lure\dist %cd%\lure /e/i/y

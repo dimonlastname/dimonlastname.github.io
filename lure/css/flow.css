@@ -1,0 +1,181 @@
+.body{
+
+}
+h1{
+    padding: 15px;
+    font-size: 2em;
+}
+.button{
+    padding: 5px 10px;
+
+    background-color: #006fb3;
+    color: #fff;
+}
+.menu-content{
+    /*width: 800px;*/
+    margin: 0 40px;
+}
+.block{
+    border: 2px #006fb3 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.list_element{
+    border: 1px #00b1ff solid;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.list_element:last-child{
+    margin-bottom: 0;
+}
+
+
+.m20{
+    margin: 20px;
+}
+.padding20{
+    margin: 20px;
+}
+
+.flow-canvas{
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    min-height: 500px;
+   /* min-width: 90%;*/
+    overflow-x: auto;
+}
+
+.flow-item{
+    border: 1px #00b1ff solid;
+    height: 150px;
+    width: 250px;
+    font-size: 0.8em;
+    position: absolute;
+    background-color: #9de1ff;
+    color: #fff;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.2);
+    padding: 10px 10px 10px;
+    z-index: 1;
+}
+.flow-item .head{
+    background-color: #00b1ff;
+    color: #fff;
+    cursor: default;
+}
+.flow-item-content{
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+
+}
+    .flow-item-html{
+        background-color: #fff;
+        flex:1;
+        margin: 10px 0 20px;
+    }
+.flow-sockets {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-self: flex-end;
+    width: 100%;
+    margin-left: 10px;
+    /*opacity: 0;*/
+
+}
+.flow-item:hover .flow-sockets{
+    opacity: 1;
+}
+.flow-outputs{
+    bottom: -0;
+}
+.flow-inputs{
+    top: 0;
+}
+.flow-item-socket{
+   /* border: 1px #00b1ff solid;*/
+    /*background-color: #9de1ff;*/
+    background-color: #00b1ff;
+    height: 8px;
+    width: 16px;
+    position: relative;
+
+ }
+.flow-item-socket-in{
+    border-radius: 10px 10px 0 0;
+    bottom: 9px;
+}
+.flow-item-socket-out{
+    border-radius: 0 0 10px 10px;
+    top: 9px;
+}
+.flow-item-socket:before{
+    content: attr(data-name);
+    font-size: 0.9em;
+    white-space: nowrap;
+    top: -15px;
+    left: -50%;
+    position: absolute;
+    color: #000;
+    text-align: center;
+}
+.flow-item-socket-in:before{
+    display: none;
+    top: -3px;
+    left: calc(100% + 5px)
+}
+.flow-item-socket-in:hover:before{
+    display: block;
+}
+
+.flow-line{
+    position: absolute;
+    height: 2px;
+    min-width: 20px;
+    background-color: rgba(255,0,00, 0);
+    z-index: 0 ;
+   /* cursor: pointer;*/
+    transform-origin: 0% 50%;
+}
+.flow-line-body{
+    height: 2px;
+    width: calc(100% - 20px);
+    background-color: #000;
+    cursor: pointer;
+}
+.flow-line:hover .flow-line-body{
+    background-color: #ff0004;
+
+}
+.flow-line:hover:before,
+.flow-line:hover:after{
+
+    border-left: 15px #ff0004 solid;
+}
+
+.flow-line:before{
+    position: absolute;
+    content: '';
+    border: 4px transparent solid;
+    border-left: 15px #000 solid;
+    transform-origin: 100%;
+    bottom: -3px;
+    right: 7px;
+    cursor: pointer;
+}
+.flow-item-socket:hover{
+    background-color: #ffcc00;
+}
+
+
+.flow-add{
+    margin: 20px;
+    padding: 10px;
+    background-color: #eee;
+}
+.flow-add .caption{
+    padding: 0;
+    width: 150px;
+}

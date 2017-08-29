@@ -1,0 +1,61 @@
+.body{
+
+}
+div{
+
+}
+h1{
+    padding: 15px;
+    font-size: 2em;
+}
+h2{
+    padding: 5px;
+    font-size: 1em;
+    text-decoration: underline;
+}
+.element.active{
+    background-color: #00b1ff;
+    color: #fff;
+}
+.button{
+    padding: 5px 10px;
+
+    background-color: #006fb3;
+    color: #fff;
+}
+.p10{
+    padding: 10px;
+    padding-right: 0;
+}
+.p10:last-child{
+    padding-right: 10px;
+}
+
+.navigation .button:hover,
+.navigation .button.active{
+    background-color: #00b1ff;
+    cursor: pointer;
+}
+.main-menu{
+    overflow: hidden;
+    min-width: 200px;
+    width: 200px;
+  /*  transition: 0.6s all;*/
+}
+.main-menu-content{
+    background-color: #ddd;
+    white-space: nowrap;
+
+}
+.main-content{
+    flex: 1;
+}
+    .content{
+        background-color: #eee;
+        margin-bottom: 10px;
+    }
+        .sub-content{
+            background-color: #ddd;
+            margin: 10px;
+            padding: 10px;
+        }

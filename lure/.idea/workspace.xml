@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/css/main.scss" description="}" line="25" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97b50947-2f40-4436-be55-d6b819386db8" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="monsieur" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding>
+                <element signature="e#193#719#0" expanded="false" />
+                <element signature="e#733#1220#0" expanded="false" />
+                <element signature="e#1234#2093#0" expanded="false" />
+                <marker date="1504005711716" expanded="true" signature="2192:2319" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doc.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/doc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+              <folding>
+                <element signature="e#73#143#0" expanded="false" />
+                <element signature="e#153#240#0" expanded="false" />
+                <element signature="e#250#339#0" expanded="false" />
+                <element signature="e#349#433#0" expanded="false" />
+                <element signature="e#443#526#0" expanded="false" />
+                <element signature="e#536#623#0" expanded="false" />
+                <marker date="1504005922616" expanded="true" signature="1073:1574" ph="..." />
+                <marker date="1504005922616" expanded="true" signature="1539:1543" ph="&lt;" />
+                <marker date="1504005922616" expanded="true" signature="1548:1552" ph="&gt;" />
+                <marker date="1504005922616" expanded="true" signature="1718:1864" ph="..." />
+                <marker date="1504005922616" expanded="true" signature="1759:1818" ph="..." />
+                <marker date="1504005922616" expanded="true" signature="2258:2455" ph="..." />
+                <marker date="1504005922616" expanded="true" signature="2603:2616" ph="..." />
+                <marker date="1504005922616" expanded="true" signature="2617:2844" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_culture.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/_culture.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>contains</find>
+      <find>Object.keys(o).length</find>
+      <find>conf</find>
+      <find>$</find>
+      <find>$(</find>
+      <find>tpltr-error-hint</find>
+      <find>tpltr</find>
+      <find>PageCursor</find>
+      <find>_DataCount</find>
+      <find>lines</find>
+      <find>Data.length</find>
+      <find>tpltr-line</find>
+      <find>DataCount</find>
+      <find>isShowAllButton</find>
+      <find>NoAnimaton</find>
+      <find>isEmptyHide</find>
+      <find>control[i].Content</find>
+      <find>LineBuilder</find>
+      <find>MonsieurTutor</find>
+      <find>/*`</find>
+      <find>editable</find>
+      <find>.parent.</find>
+      <find>MonsieurTutor.ColorTransparent</find>
+      <find>valuePre</find>
+      <find>PerformanceNow</find>
+      <find>&gt;</find>
+      <find>multieach</find>
+      <find>head</find>
+      <find>but a</find>
+      <find>content</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>element</replace>
+      <replace>Compile</replace>
+      <replace>__private</replace>
+      <replace>TempLine</replace>
+      <replace>flex-</replace>
+      <replace>isVisible</replace>
+      <replace>s</replace>
+      <replace>$this.Type</replace>
+      <replace>.Target</replace>
+      <replace>Content</replace>
+      <replace>.Disactive()</replace>
+      <replace>Disactive()</replace>
+      <replace>classList.add</replace>
+      <replace>content</replace>
+      <replace>classList.remove</replace>
+      <replace>control[i].Target</replace>
+      <replace>this.LineBuilder</replace>
+      <replace>monsieur-tutor</replace>
+      <replace>&quot;transparent&quot;</replace>
+      <replace>.parentElement.</replace>
+      <replace>Monsieur.PerformanceNow</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/css/test.css" />
+        <option value="$PROJECT_DIR$/js/test.js" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/ext/css/modify.css" />
+        <option value="$PROJECT_DIR$/js/tdoc.js" />
+        <option value="$PROJECT_DIR$/js/obj.js" />
+        <option value="$PROJECT_DIR$/css/obj.css" />
+        <option value="$PROJECT_DIR$/flow.html" />
+        <option value="$PROJECT_DIR$/js/flow.js" />
+        <option value="$PROJECT_DIR$/css/flow.css" />
+        <option value="$PROJECT_DIR$/obj.html" />
+        <option value="C:/!Web/_ext/monsieur/jquery.monsieur.js" />
+        <option value="$PROJECT_DIR$/ext/css/common.css" />
+        <option value="$PROJECT_DIR$/ext/monsieur/jquery.monsieur.css" />
+        <option value="$PROJECT_DIR$/ext/js/cssrefresh.js" />
+        <option value="$PROJECT_DIR$/ext/js/prototypes.js" />
+        <option value="$PROJECT_DIR$/ext/monsieur/jquery.monsieur.js" />
+        <option value="$PROJECT_DIR$/jquery.monsieur-2.js" />
+        <option value="$PROJECT_DIR$/monsieur/jquery.monsieur-2.css" />
+        <option value="$PROJECT_DIR$/ext/monsieur/jqueryless.monsieur.js" />
+        <option value="$PROJECT_DIR$/monsieur/jquery.monsieur-2.js" />
+        <option value="$PROJECT_DIR$/monsieur/monsieur-2.css" />
+        <option value="$PROJECT_DIR$/monsieur/monsieur-2.js" />
+        <option value="$PROJECT_DIR$/monsieur/monsieur.css" />
+        <option value="$PROJECT_DIR$/monsieur/monsieur.js" />
+        <option value="$PROJECT_DIR$/doc.html" />
+        <option value="$PROJECT_DIR$/chart.html" />
+        <option value="$PROJECT_DIR$/css/doc.scss" />
+        <option value="$PROJECT_DIR$/js/_menu.js" />
+        <option value="$PROJECT_DIR$/js/_culture.js" />
+        <option value="$PROJECT_DIR$/ext/monsieur/monsieur.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/menu.js" />
+        <option value="$PROJECT_DIR$/js/doc.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="217" />
+    <option name="y" value="102" />
+    <option name="width" value="1544" />
+    <option name="height" value="885" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JSUnfilteredForInLoop</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97b50947-2f40-4436-be55-d6b819386db8" name="Default" comment="" />
+      <created>1496927405992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1496927405992</updated>
+      <workItem from="1496927407496" duration="22114000" />
+      <workItem from="1497005852176" duration="26848000" />
+      <workItem from="1497359611609" duration="77577000" />
+      <workItem from="1497624628530" duration="38398000" />
+      <workItem from="1498029130442" duration="21788000" />
+      <workItem from="1498059736980" duration="890000" />
+      <workItem from="1498060645222" duration="14676000" />
+      <workItem from="1498142934477" duration="1313000" />
+      <workItem from="1498202291023" duration="5771000" />
+      <workItem from="1498461136367" duration="14837000" />
+      <workItem from="1498547340562" duration="13392000" />
+      <workItem from="1498571349479" duration="4263000" />
+      <workItem from="1498633731716" duration="8403000" />
+      <workItem from="1498650788218" duration="710000" />
+      <workItem from="1498719937651" duration="12055000" />
+      <workItem from="1498741471612" duration="4915000" />
+      <workItem from="1498808970412" duration="8679000" />
+      <workItem from="1498834740190" duration="1714000" />
+      <workItem from="1499066284831" duration="65000" />
+      <workItem from="1499066792610" duration="3860000" />
+      <workItem from="1499152698938" duration="8516000" />
+      <workItem from="1499255182359" duration="24249000" />
+      <workItem from="1499427013630" duration="2463000" />
+      <workItem from="1499440361976" duration="986000" />
+      <workItem from="1499672696660" duration="3515000" />
+      <workItem from="1499697645551" duration="1353000" />
+      <workItem from="1499768573732" duration="23833000" />
+      <workItem from="1500275949325" duration="599000" />
+      <workItem from="1500282630827" duration="7457000" />
+      <workItem from="1500377342644" duration="108832000" />
+      <workItem from="1501141574674" duration="1880000" />
+      <workItem from="1501838861740" duration="3181000" />
+      <workItem from="1501844888788" duration="8532000" />
+      <workItem from="1502092791234" duration="5768000" />
+      <workItem from="1502115435278" duration="1266000" />
+      <workItem from="1502176284306" duration="32448000" />
+      <workItem from="1502867970369" duration="6950000" />
+      <workItem from="1502953761126" duration="1148000" />
+      <workItem from="1503059891406" duration="320000" />
+      <workItem from="1503060658255" duration="25000" />
+      <workItem from="1503066480237" duration="19000" />
+      <workItem from="1503917444729" duration="132000" />
+      <workItem from="1503918084262" duration="24450000" />
+      <workItem from="1504003464341" duration="2507000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="552697000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="217" y="102" width="1544" height="885" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16736402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5032051" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273196" sideWeight="0.49679488" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ext/monsieur/monsieur.js</url>
+          <line>659</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="135" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://X:/WWW/magnet.rstat.ru/js/_menu.js" />
+    <entry file="file://C:/!Web/CoreSites/WashingCloud/ServiceConsole/Res/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://X:/WWW/magnet.rstat.ru/reports.html" />
+    <entry file="file://X:/WWW/magnet.rstat.ru/js/main.js" />
+    <entry file="file://C:/!Web/!_jBuilder/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/js/jquery-ui.min.js" />
+    <entry file="file://C:/!Web/_ext/jBuilder/jBuilder.js" />
+    <entry file="file://$PROJECT_DIR$/ext/css/modify.css" />
+    <entry file="file://$PROJECT_DIR$/js/tdoc.js" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="946" column="0" lean-forward="false" selection-start-line="946" selection-start-column="0" selection-end-line="946" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://X:/WWW/magnet.rstat.ru/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/js/flow.js" />
+    <entry file="file://$PROJECT_DIR$/../test1488/iwannarock/ext/css/fonts.css" />
+    <entry file="file://$PROJECT_DIR$/css/flow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/obj.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/!Web/_ext/monsieur/jquery.monsieur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="173" column="3" lean-forward="false" selection-start-line="173" selection-start-column="3" selection-end-line="173" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/js/cssrefresh.js" />
+    <entry file="file://$PROJECT_DIR$/ext/monsieur/jquery.monsieur.js" />
+    <entry file="file://$PROJECT_DIR$/ext/monsieur/jquery.monsieur.css" />
+    <entry file="file://$PROJECT_DIR$/jquery.monsieur-2.css" />
+    <entry file="file://$PROJECT_DIR$/jquery.monsieur-2.js" />
+    <entry file="file://$PROJECT_DIR$/monsieur/jquery.monsieur-2.css" />
+    <entry file="file://$PROJECT_DIR$/monsieur/jquery.monsieur-2.js" />
+    <entry file="file://$PROJECT_DIR$/ext/css/common.css" />
+    <entry file="file://$PROJECT_DIR$/monsieur/monsieur-2.css" />
+    <entry file="file://$PROJECT_DIR$/monsieur/monsieur-2.js" />
+    <entry file="file://$PROJECT_DIR$/ext/js/prototypes.js" />
+    <entry file="file://$PROJECT_DIR$/ext/monsieur/jqueryless.monsieur.js" />
+    <entry file="file://$PROJECT_DIR$/flow.html" />
+    <entry file="file://$PROJECT_DIR$/monsieur/monsieur.css" />
+    <entry file="file://$PROJECT_DIR$/../test1488/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/js/obj.js" />
+    <entry file="file://$PROJECT_DIR$/css/_tdoc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test1488/js/tdoc.js" />
+    <entry file="file://$PROJECT_DIR$/../test1488/tdoc.html" />
+    <entry file="file://$PROJECT_DIR$/monsieur/monsieur.js" />
+    <entry file="file://$PROJECT_DIR$/chart.html" />
+    <entry file="file://$PROJECT_DIR$/doc.html" />
+    <entry file="file://$PROJECT_DIR$/obj.html" />
+    <entry file="file://$PROJECT_DIR$/css/doc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/doc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/_menu.js" />
+    <entry file="file://$PROJECT_DIR$/ext/monsieur/monsieur.js" />
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/_culture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#193#719#0" expanded="false" />
+            <element signature="e#733#1220#0" expanded="false" />
+            <element signature="e#1234#2093#0" expanded="false" />
+            <marker date="1504005711716" expanded="true" signature="2192:2319" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/doc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+          <folding>
+            <element signature="e#73#143#0" expanded="false" />
+            <element signature="e#153#240#0" expanded="false" />
+            <element signature="e#250#339#0" expanded="false" />
+            <element signature="e#349#433#0" expanded="false" />
+            <element signature="e#443#526#0" expanded="false" />
+            <element signature="e#536#623#0" expanded="false" />
+            <marker date="1504005922616" expanded="true" signature="1073:1574" ph="..." />
+            <marker date="1504005922616" expanded="true" signature="1539:1543" ph="&lt;" />
+            <marker date="1504005922616" expanded="true" signature="1548:1552" ph="&gt;" />
+            <marker date="1504005922616" expanded="true" signature="1718:1864" ph="..." />
+            <marker date="1504005922616" expanded="true" signature="1759:1818" ph="..." />
+            <marker date="1504005922616" expanded="true" signature="2258:2455" ph="..." />
+            <marker date="1504005922616" expanded="true" signature="2603:2616" ph="..." />
+            <marker date="1504005922616" expanded="true" signature="2617:2844" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

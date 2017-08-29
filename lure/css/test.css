@@ -1,0 +1,30 @@
+.body{
+
+}
+h1{
+    padding: 15px;
+    font-size: 2em;
+}
+.button{
+    padding: 5px 10px;
+
+    background-color: #006fb3;
+    color: #fff;
+}
+.menu-content{
+    /*width: 800px;*/
+    margin: 0 40px;
+}
+.block{
+    border: 2px #006fb3 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.list_element{
+    border: 1px #00b1ff solid;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.list_element:last-child{
+    margin-bottom: 0;
+}
